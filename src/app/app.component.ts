@@ -5,15 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   
   // external styling
-  //styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css']
 
   //inline styles
-  styles: [`
-  h3{
-    color:red;
-  }`
-]
+  //styles: [`
+  //h3{
+    //color:red;
+  //}`
+//]
+
 })
 export class AppComponent {
-  //name = 'Farjad';
+  username = '';
 }
