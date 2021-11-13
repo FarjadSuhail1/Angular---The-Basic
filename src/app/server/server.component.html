@@ -8,5 +8,7 @@ in databinding string interpolation??? as it only accepts string or those that c
 
 
 
-
-<p>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }} testign for boolean {{testBool}} </p>
+<!-- [ngClass] -> accepts class: condition -->
+<p [ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{online: serverStatus === 'online'}"
+>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }} testign for boolean {{testBool}} </p>
